@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Formuário</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rgba(250, 242, 242, 0.548);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário cadastro</h1>
+        <fieldset>
+            <legend>Dados pessoais
+            </legend>
+            <div class="row">
+                <label>Nome</label><input type="text"/>
+                <label>Sobrenome</label><input type="text"/>
+                <label>E-mail</label><input type="email"/>
+            </div>
+            <div class="row">
+                <label>CPF</label><input type="number"/>
+                <label>Matricula</label><input type="number"/>
+                <label>ID</label><input type="number"/>
+            </div>
+            <div class="row">
+                <label>Data de nascimento</label><input type="date"/>
+                <label>Naturalidade</label><input type="text"/>
+                <label>Nacionalidade</label><input type="text"/>
+                    <label>Estado Civil: </label>
+                        <select name="role">
+                            <option value="">Selecione</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="uniao">Em união estável</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Víuvo(a)</option>
+                        </select>
+                <label>Dependentes: Sim</label><input type="radio" name="aceita"/><label>Não</label><input type="radio" name="aceita"/><br>
+                <label>Quantos dependentes</label><input type="number"/>
+                
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Escolaridade
+                </legend>
+            <div class="row">
+                <label>Escolaridade: </label>
+                <select name="role">
+                    <option value="">Selecione</option>
+                    <option value="fundamental">Fundamental</option>
+                    <option value="medio">Médio</option>
+                    <option value="superiorc">Superior incompleto</option>
+                    <option value="supin">Superior completo(a)</option>
+                    <option value="pos">Pós Graduação(especialização)</option>
+                    <option value="posm">Pós Graduação(Mestrado)</option>
+                    <option value="posd">Pós Graduação(Doutorado)</option>
+                <div>
+                    </select>
+                        <label>Instituição de Ensino: </label><input type="radio" name="borda" value="sim">Pública<br><input type="radio" name="borda" value="nao">Privada<br>
+                </div>
+                <label>Instituição de ensino</label><input type="text"/>
+                <label>Graduação</label><input type="text"/>
+                <label>Ano de conclusão</label><input type="date"/>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Endereço
+                </legend>
+            <div class="row">
+                <label>Endereço</label><input type="text"/>
+                <label>Número</label><input style="width: 30px" type="text" width="10"/>
+                <label>CEP</label><input type="number"/>
+            </div>
+            <div class="row">
+                <label>Bairro</label><input type="text"/>
+                <label>Cidade</label><input type="text"/>
+                <label>UF</label><input type="text"/>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de contato</legend>
+            <div class="row">
+                <label>Celular</label><input type="text"/>
+                <label>WhatsApp</label><input type="text"/>
+                <label>E-mail</label><input type="email"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Dados Profissionais
+            </legend>
+            <div class="row">
+                    <label>Posto/Grad: </label>
+                    <select name="role">
+                        <option value="">Selecione Posto/Grad</option>
+                        <option value="cel">Coronel</option>
+                        <option value="tencel">Ten Cel</option>
+                        <option value="major">Major</option>
+                        <option value="cap">Capitão</option>
+                        <option value="1ten">1 tenente</option>
+                        <option value="2ten">2 tenente</option>
+                        <option value="asp">Aspirante</option>
+                        <option value="cad">Cadete</option>
+                        <option value="sub">Subtenente</option>
+                        <option value="1sarg">1 Sargento</option>
+                        <option value="2sarg">2 Sargento</option>
+                        <option value="3sarg">3 Sargento</option>
+                        <option value="cab">Cabo</option>
+                        <option value="sod">Soldado</option>
+                    </select>
+                    <label>Ultima promoção</label><input type="date"/>
+                    <label>Ano de ingresso</label><input type="date"/>
+                </div>
+                <div class="row">
+                    <label>Lotação</label><input type="text"/>
+                    <label>Tempo de unidade</label><input type="number"/>
+                    <label>Função</label><input type="text"/>
+                </div>
+                
+        </fieldset>
+        <fieldset>
+            <legend>
+                Informações de saúde
+            </legend>
+            <div class="row">
+                <label>Tipagem Sanguinea</label><input type="text"/>
+                <label>Fator RH</label><input type="text"/>
+            <div>
+                </select>
+                <label>Comorbidades: Sim</label><input type="radio" name="aceita"/><label>Não</label><input type="radio" name="aceita"/><br>
+                    <label>Quais comorbidade</label><input type="email"/>
+            </div>
+            </div>
+        </fieldset>
+    <div class="row">
+        <button type="reset">
+            Limpar
+        </button>
+        <button class="submit">
+            Enviar Formulário
+        </button>
+
+    </div>
+    
+</body>
+</html>
